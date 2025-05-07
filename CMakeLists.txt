@@ -8,7 +8,7 @@ message("CMakeLists.txt for cpp-mem")
 message("PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
 message("CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
 
-set(PACKAGE_NAME mem)
+set(PACKAGE_NAME trm-mem)
 
 # Add subdirectories for source and include files
 # Add source files
@@ -80,6 +80,6 @@ install(FILES
 # # Export the library target so other projects can import it
 install(EXPORT ${PACKAGE_NAME}Targets
     FILE ${PACKAGE_NAME}Targets.cmake
-    NAMESPACE mem::
+    NAMESPACE trm-mem::
     DESTINATION lib/cmake/${PACKAGE_NAME}
 )
