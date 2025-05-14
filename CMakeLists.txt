@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.23)
 project(cpp-mem)
 
 include(ExternalProject)
-message("CMakeLists.txt for cpp-mem")
+message("\nCMakeLists.txt for cpp-mem")
 message("PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
 message("CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
 
@@ -42,3 +42,5 @@ target_include_directories(${PACKAGE_NAME}
 include("${CMAKE_COMMON}/install_lib.cmake") # Get the generic install function
 
 install_lib(${PACKAGE_NAME})
+
+message("CMakeLists.txt for cpp-mem done \n")
